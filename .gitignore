@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Runtime engagement state (never commit)
+.engagement_state.json
+.cache/
+state.json
