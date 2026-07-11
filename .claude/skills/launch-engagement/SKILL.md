@@ -6,16 +6,16 @@ description: Orchestrate a full AI/BI client or portfolio engagement by chaining
 ## Before proceeding
 
 Read `01_Operations/Skill Notes/launch-engagement - Owner Notes.md` if it exists, and
-[[Project Delivery Pack]]. Treat owner highlights and `[!owner-*]` callouts as required context.
+Project Delivery Pack. Treat owner highlights and `[!owner-*]` callouts as required context.
 
 # Launch Engagement
 
-Walk the **Project Delivery Pack** ([[Project Delivery Pack]]) end-to-end. This skill is the
+Walk the **Project Delivery Pack** (Project Delivery Pack) end-to-end. This skill is the
 *orchestrator* — it chains existing skills in phase order. It does not duplicate their procedures;
 at each phase, read that skill's `SKILL.md` and owner companion note, then execute it.
 
-Pattern: [[Skill Packs Hub]]. Engagement spine: [[AI-BI Consulting Engagement — Template Guide]].
-Worked example: [[_Project Index|Variance Pack]].
+Pattern: Skill Packs Hub. Engagement spine: AI-BI Consulting Engagement — Template Guide.
+Worked example: Variance Pack.
 
 ## Guardrails
 
@@ -25,7 +25,7 @@ Worked example: [[_Project Index|Variance Pack]].
 - Software/code builds → **Linear**, not ClickUp Portfolio Projects (code-vs-tool, not topic).
 - Pause at human-in-the-loop seams (Power BI Desktop clicks, client sign-off, credential entry).
 - Run `/verify-build` before reporting any phase done; run `/cite check` before external narrative ships.
-- Log substantive work in today's daily note per [[CLAUDE]] write protocol.
+- Log substantive work in today's daily note per CLAUDE write protocol.
 
 ## Intake (before Phase 0)
 
@@ -154,7 +154,7 @@ target kit's Kit Guide):
 1. Draft `Dashboard_Requirements` and `Build Recipe` from intake answers.
 2. Use the validator's normalized `kit_deploy_dry_run_command` → confirm → live deploy.
 3. Create ClickUp list in Portfolio Projects → matching **type folder** (Power BI first).
-   Build the **full milestone tree** per [[SOP - Milestone-Driven ClickUp Project Setup]] —
+   Build the **full milestone tree** per SOP - Milestone-Driven ClickUp Project Setup —
    source the **engagement runbook milestone arc** (11 gates), not just AI Build Runbook phases.
 4. Stamp list + milestone IDs into the project dossier / `_Project Index`.
 
@@ -186,7 +186,7 @@ Record steps in `Build Recipe (TEMPLATE).md`.
 ### Phase 7 — Readout (client / case-study)
 
 Run **`/narrative-builder`** → **`/decision-memo`** → executive readout deck per
-[[SOP - Executive Readout Deck]].
+SOP - Executive Readout Deck.
 
 Portfolio: optional case-study pass into `Portfolio_Case_Study_Template_v2.docx` — still `/cite check`.
 
@@ -196,7 +196,7 @@ Run **`/value-realization`** → value ledger + "how to read it" one-pager.
 
 ### Phase 9 — Close
 
-- Closeout SOP ([[SOP - Engagement Closeout & Retrospective]]): acceptance, invoice pointer, retro.
+- Closeout SOP (SOP - Engagement Closeout & Retrospective): acceptance, invoice pointer, retro.
 - Append **`/daily-log`** entry covering every auditable path changed this session.
 - **`/task-reconcile`** if ClickUp state changed.
 
@@ -221,4 +221,4 @@ Report:
 - Verification method for each completed gate
 - Open risks or deferred items
 
-Do not register a [[Cadence]] trigger until the owner battle-tests a full engagement unparked.
+Do not register a Cadence trigger until the owner battle-tests a full engagement unparked.
