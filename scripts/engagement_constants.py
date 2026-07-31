@@ -31,6 +31,25 @@ WORK_SURFACES = {
 SOFTWARE_CODE_SKIP_PHASES = frozenset({3, 4, 5, 6})
 ADVISORY_ONLY_SKIP_PHASES = frozenset({3, 4, 5})
 
+# --- Engagement state path: a known limitation of this sanitized extract ---
+#
+# This extract ships the intake pipeline and Phase 0 only, and it keeps the
+# original SINGLE SHARED state file: one ".engagement_state.json" at the root,
+# schema version 1.0. That is safe for exactly one engagement at a time.
+#
+# The private tree replaced this singleton with PER-ENGAGEMENT state: one file
+# per engagement at ".engagement_states/<16-hex-digest>.json" (the digest is
+# derived from the project path) plus an ".engagement_states/index.json" mapping
+# each project path to its digest and state file, at schema version 2. It also
+# carries an explicit comment forbidding a shared singleton filename here,
+# because a singleton lets one engagement overwrite another's state.
+#
+# The limitation is stated rather than patched. The per-engagement state layer
+# belongs to the Phase 1-9 gate runners, which are not part of this extract, so
+# changing these paths in isolation would break the code that is published here
+# without delivering the machinery that motivated the change. Anyone running
+# more than one engagement concurrently must replace the constants below first.
+#
 # Canonical engagement state written by launch-engagement validate_intake and
 # consumed by start-project via --state-file. Always vault-root relative.
 # Do not use .cache/launch-engagement/ — that path is obsolete.

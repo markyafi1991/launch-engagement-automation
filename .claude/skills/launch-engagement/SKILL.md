@@ -3,6 +3,24 @@ name: launch-engagement
 description: Orchestrate a full AI/BI client or portfolio engagement by chaining the Project Delivery skill pack — scaffold, discovery, KPI design, kit deploy, build runbook, QA, readout, and close. Use when the user says "/launch-engagement", "launch engagement", "run the full project", "walk me through the engagement", "start to finish on this project", or wants the complete project-delivery chain instead of a single skill. Business-scoped — never reads 09_Job_Search or 10_Personal. Composes with /start-project, /project-kit, and the engagement template; does not replace them.
 ---
 
+## Scope of this copy — sanitized extract
+
+This file is published as part of a sanitized extract of one subsystem from a larger private
+operations vault. Only part of the pipeline it describes ships here as code.
+
+- **Runnable here:** the **intake pipeline** and **Phase 0 (scaffold)** — `validate_intake.py`
+  and the modules beside it, plus `start-project`'s `build_project.py`. These are tested and
+  work from a fresh checkout.
+- **Not included:** the **Phase 1–9 gate runners**. The per-phase contracts, evidence
+  generators, hash-bound gate files, and TTY approval prompts that actually enforce those
+  phases live in the private tree. Phases 1–9 are described below and documented in `docs/`,
+  but there is nothing in this repository to invoke for them.
+
+Read the phase sections that follow — **the Phase 3–9 sections in particular** — as a summary
+of the procedure, not as the enforcement. They state what each phase does and what its gate
+means; they are not backed by executable gate machinery in this copy. An operator working from
+this repository alone runs those phases by hand.
+
 ## Before proceeding
 
 Read `01_Operations/Skill Notes/launch-engagement - Owner Notes.md` if it exists, and
