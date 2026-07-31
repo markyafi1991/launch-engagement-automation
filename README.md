@@ -104,7 +104,7 @@ loose prompt judgment. It:
 │   ├── intake_commands.py       # emits start-project / project-kit commands
 │   ├── kit_registry.py          # portfolio kit registry
 │   └── _paths.py                # import bootstrap
-├── tests/                       # 24 tests (unittest)
+├── tests/                       # 26 tests (unittest), 4 skipped without vault templates
 └── examples/                    # sample intakes (client + portfolio)
 scripts/engagement_constants.py  # shared enums (also used by start-project)
 ```
@@ -117,8 +117,9 @@ The intake pipeline is self-contained and testable from a fresh checkout:
 python3 -m unittest discover -s .claude/skills/launch-engagement/tests -p "test_*.py"
 ```
 
-Expected: `Ran 24 tests ... OK`. Cross-skill integration tests require the live
-Phase 0 scaffold against templates that live in the private vault and are not included here.
+Expected: `Ran 26 tests ... OK (skipped=4)`. The four skipped tests are the cross-skill
+integration tests, which exercise the live Phase 0 scaffold against templates that live in
+the private vault and are not included here.
 
 ## The audit
 
