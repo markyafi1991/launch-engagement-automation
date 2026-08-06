@@ -1,6 +1,6 @@
 ---
 name: launch-engagement
-description: Orchestrate a full AI/BI client or portfolio engagement by chaining the Project Delivery skill pack — scaffold, discovery, KPI design, kit deploy, build runbook, QA, readout, and close. Use when the user says "/launch-engagement", "launch engagement", "run the full project", "walk me through the engagement", "start to finish on this project", or wants the complete project-delivery chain instead of a single skill. Business-scoped — never reads 09_Job_Search or 10_Personal. Composes with /start-project, /project-kit, and the engagement template; does not replace them.
+description: Orchestrate a full AI/BI client or portfolio engagement by chaining the Project Delivery skill pack — scaffold, discovery, KPI design, kit deploy, build runbook, QA, readout, and close. Use when the user says "/launch-engagement", "launch engagement", "run the full project", "walk me through the engagement", "start to finish on this project", or wants the complete project-delivery chain instead of a single skill. Scoped to engagement and portfolio content only. Composes with /start-project, /project-kit, and the engagement template; does not replace them.
 ---
 
 ## Scope of this copy — sanitized extract
@@ -37,7 +37,7 @@ Worked example: Variance Pack.
 
 ## Guardrails
 
-- Business brain only — never read or write `09_Job_Search/` or `10_Personal/`.
+- Engagement scope only — the skill reads and writes engagement content, never unrelated areas of the source vault.
 - Portfolio projects: data classification must be `synthetic` or `public`.
 - Never put real client data into `04_Portfolio/`.
 - Software/code builds → **Linear**, not ClickUp Portfolio Projects (code-vs-tool, not topic).
