@@ -1,0 +1,10 @@
+{
+  "engagement_state.py": {
+    "source_sha256": "89633e203e67d7752d45307dc8be2b930a7f7ba1f9741595d193ad4a628bc9a5",
+    "extraction": "Only _paths import removed; sibling constants supplied"
+  },
+  "engagement_constants.py": {
+    "source_sha256": "813f9fd28e61faae9a13114af8b528955423b96a5abe87df3638bee537086237",
+    "extraction": "Exact whole module"
+  }
+}

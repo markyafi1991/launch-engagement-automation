@@ -1,0 +1,8 @@
+{
+  "synthetic": true,
+  "separate_paths": true,
+  "stale_revision_refused": true,
+  "schema": 2,
+  "end_to_end_engagement": false,
+  "v1_shipped": false
+}

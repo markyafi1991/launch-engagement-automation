@@ -1,0 +1,14 @@
+test_failed_replace_preserves_state (test_state.StateTests.test_failed_replace_preserves_state) ... ok
+test_invalid_revisions_rejected (test_state.StateTests.test_invalid_revisions_rejected) ... ok
+test_invalid_schema_and_empty_project_refused (test_state.StateTests.test_invalid_schema_and_empty_project_refused) ... ok
+test_malformed_index_does_not_fail_accepted_state_write (test_state.StateTests.test_malformed_index_does_not_fail_accepted_state_write) ... ok
+test_private_file_mode (test_state.StateTests.test_private_file_mode) ... ok
+test_projects_do_not_overwrite_each_other (test_state.StateTests.test_projects_do_not_overwrite_each_other) ... ok
+test_revision_check_is_explicitly_optional (test_state.StateTests.test_revision_check_is_explicitly_optional) ... ok
+test_stale_revision_refused (test_state.StateTests.test_stale_revision_refused) ... ok
+test_symlink_read_refused (test_state.StateTests.test_symlink_read_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.015s
+
+OK

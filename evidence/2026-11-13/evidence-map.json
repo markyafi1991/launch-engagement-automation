@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "date": "2026-11-13",
+  "engine_status": "Beta",
+  "v1_shipped": false,
+  "beta_report_url": "https://www.linkedin.com/feed/update/urn:li:activity:7490949064436674560",
+  "continuation": {
+    "title": "From Knowledge Vault to Governed AI Delivery",
+    "edition": "1.1",
+    "status": "owner-review draft",
+    "url": null,
+    "pdf_sha256": null
+  },
+  "draft_pages": [
+    22,
+    23,
+    24,
+    31,
+    32
+  ],
+  "scope": "delivery-evidence",
+  "claims": [
+    {
+      "claim": "Per-engagement state paths, atomic persistence, restrictive file mode and stale-revision refusal",
+      "state": "demonstrated",
+      "code": "engagement_state.py",
+      "test": "tests/test_state.py",
+      "limit": "POSIX/macOS/Linux state primitive; complete phase chain and authenticated approvals are not shipped here"
+    },
+    {
+      "claim": "First accepted end-to-end engagement and reproducible v1 delivery package",
+      "state": "proposed v1 work",
+      "code": null,
+      "test": null,
+      "limit": "Neither passing these tests nor publishing the status report establishes v1 shipment"
+    }
+  ],
+  "snapshot_publication_state": "Prepared for review at snapshot time; final decisions are in the evidence release publication receipt",
+  "code_provenance": "PROVENANCE.json",
+  "tests": "python3 -B -m unittest discover -s tests -v",
+  "demo": "python3 -B demo.py"
+}
