@@ -1,5 +1,7 @@
 # Launch-Engagement Automation
 
+> **2026-11-13 evidence update:** [Current per-engagement state slice](evidence/2026-11-13/README.md) adds standalone code, synthetic tests, source provenance and report mapping. It is separate from the historical extract below; no complete v1 release is claimed.
+
 An orchestration engine designed to run a full AI/BI consulting engagement end-to-end — from
 a structured intake through scaffolding, discovery, KPI design, kit deployment, build, QA,
 handoff, readout, value realization, and close — by chaining a pack of single-purpose

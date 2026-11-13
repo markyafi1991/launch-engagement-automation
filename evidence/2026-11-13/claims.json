@@ -1,0 +1,4 @@
+[
+  {"claim":"Per-engagement state paths, atomic persistence, restrictive file mode and stale-revision refusal", "state":"demonstrated", "code":"engagement_state.py", "test":"tests/test_state.py", "limit":"POSIX/macOS/Linux state primitive; complete phase chain and authenticated approvals are not shipped here"},
+  {"claim":"First accepted end-to-end engagement and reproducible v1 delivery package", "state":"proposed v1 work", "code":null, "test":null, "limit":"Neither passing these tests nor publishing the status report establishes v1 shipment"}
+]
